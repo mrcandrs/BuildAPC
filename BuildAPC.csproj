@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4B42261F-6FCC-4E38-B29F-6753A98C04FC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BuildAPC</RootNamespace>
+    <AssemblyName>BuildAPC</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Untitled design.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CPUScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CPUScreen.Designer.cs">
+      <DependentUpon>CPUScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomMessageBox.Designer.cs">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FANScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FANScreen.Designer.cs">
+      <DependentUpon>FANScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPasswordForm.Designer.cs">
+      <DependentUpon>ForgotPasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPasswordForm.Designer.cs">
+      <DependentUpon>ResetPasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GPUScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GPUScreen.Designer.cs">
+      <DependentUpon>GPUScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HDDScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HDDScreen.Designer.cs">
+      <DependentUpon>HDDScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyboardScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeyboardScreen.Designer.cs">
+      <DependentUpon>KeyboardScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonitorScreen.Designer.cs">
+      <DependentUpon>MonitorScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MotherboardScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MotherboardScreen.Designer.cs">
+      <DependentUpon>MotherboardScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingScreen.Designer.cs">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mouse.Designer.cs">
+      <DependentUpon>Mouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products.Designer.cs">
+      <DependentUpon>Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PSUScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PSUScreen.Designer.cs">
+      <DependentUpon>PSUScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuantityOfItems.cs" />
+    <Compile Include="RAMScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RAMScreen.Designer.cs">
+      <DependentUpon>RAMScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderingForm.Designer.cs">
+      <DependentUpon>OrderingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmationForm.Designer.cs">
+      <DependentUpon>ConfirmationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceiptForm.Designer.cs">
+      <DependentUpon>ReceiptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SSDScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SSDScreen.Designer.cs">
+      <DependentUpon>SSDScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CPUScreen.resx">
+      <DependentUpon>CPUScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomMessageBox.resx">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FANScreen.resx">
+      <DependentUpon>FANScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPasswordForm.resx">
+      <DependentUpon>ForgotPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GPUScreen.resx">
+      <DependentUpon>GPUScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HDDScreen.resx">
+      <DependentUpon>HDDScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeyboardScreen.resx">
+      <DependentUpon>KeyboardScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonitorScreen.resx">
+      <DependentUpon>MonitorScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MotherboardScreen.resx">
+      <DependentUpon>MotherboardScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingScreen.resx">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mouse.resx">
+      <DependentUpon>Mouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products.resx">
+      <DependentUpon>Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PSUScreen.resx">
+      <DependentUpon>PSUScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RAMScreen.resx">
+      <DependentUpon>RAMScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderingForm.resx">
+      <DependentUpon>OrderingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmationForm.resx">
+      <DependentUpon>ConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiptForm.resx">
+      <DependentUpon>ReceiptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ResetPasswordForm.resx">
+      <DependentUpon>ResetPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSDScreen.resx">
+      <DependentUpon>SSDScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C# IMPORTS\4k background footage Ae plugin plexus.gif" />
+    <Content Include="Untitled design.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -19,6 +19,12 @@ namespace WindowsFormsApp1
         public string MONITOR;
         public string KEYBOARD;
         public string MOUSE;
+        //public string EMAIL;
+        //public string ADDRESS;
+        //public string CITY;
+        //public string PROVINCE;
+        //public string ZIPCODE;
+        //public string CONTACT;
        
 
 
@@ -36,7 +42,12 @@ namespace WindowsFormsApp1
             MONITOR = monitor;
             KEYBOARD = keyboard;
             MOUSE = mouse;
-
+            //EMAIL = email;
+           // ADDRESS = address;
+            //CITY = city;
+            //PROVINCE = province;
+            //ZIPCODE = zipcode;
+            //CONTACT = contact;
         }
 
         public string Motherboard { get { return MOTHERBOARD; } set { MOTHERBOARD = value; } }
@@ -50,6 +61,12 @@ namespace WindowsFormsApp1
         public string Monitor { get { return MONITOR; } set { MONITOR = value; } }
         public string Keyboard { get { return KEYBOARD; } set { KEYBOARD = value; } }
         public string Mouse { get { return MOUSE; } set { MOUSE = value; } }
+        //public string Email { get { return EMAIL; }set { EMAIL = value; } }
+        //public string Address { get { return ADDRESS; } set { ADDRESS = value; } }
+        //public string City { get { return CITY; } set { CITY = value; } }
+        //public string Province { get { return PROVINCE; } set { PROVINCE = value; } }
+        //public string Zipcode { get { return ZIPCODE; } set {  ZIPCODE = value; } }
+        //public string Contact { get { return CONTACT; } set { CONTACT = value; } }
 
     }
 }
